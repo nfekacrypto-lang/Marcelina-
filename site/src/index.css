@@ -1,10 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  background-color: #0a0a0a;
-  color: #ffffff;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+@layer base {
+    body {
+        font-family: 'Quicksand', sans-serif;
+        color: #1C1628;
+        min-height: 100vh;
+        overflow-x: hidden;
+        background: 
+            linear-gradient(to right, transparent 29px, #E8B8D0 30px),
+            linear-gradient(to bottom, transparent 29px, #E8B8D0 30px),
+            linear-gradient(135deg, #F8E1F0 0%, #F5D0E6 100%);
+        background-size: 30px 30px, 30px 30px, 100% 100%;
+        background-attachment: fixed;
+    }
+}
+
+.font-fredoka {
+    font-family: "Fredoka One", cursive;
+}
+
+.neo-brutalism {
+    border: 5px solid #1a1a1a;
+    box-shadow: 6px 6px 0px #1a1a1a;
+    transition: all 0.2s ease;
+}
+
+.neo-brutalism-btn {
+    border: 4px solid #1a1a1a;
+    box-shadow: 6px 6px 0px #1a1a1a;
+    transition: all 0.2s ease;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.neo-brutalism-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 8px 8px 0px #1a1a1a;
+    outline: 2px solid #FF1493;
+}
+
+.neo-brutalism-btn:active {
+    transform: translateY(4px);
+    box-shadow: 2px 2px 0px #1a1a1a;
+}
+
+.swiper-cards {
+    width: 280px;
+    height: 350px;
+}
+@media (min-width: 768px) {
+    .swiper-cards {
+        width: 320px;
+        height: 400px;
+    }
+}
+
+.hd-img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Літаючі Y2K Елементи */
+.animate-float-slow {
+    animation: float-anim 6s ease-in-out infinite;
+}
+.animate-float-med {
+    animation: float-anim 4s ease-in-out infinite;
+}
+.animate-float-fast {
+    animation: float-anim 3s ease-in-out infinite;
+}
+
+@keyframes float-anim {
+    0%, 100% { transform: translateY(0px) rotate(-3deg); }
+    50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+/* Мерехтіння VIP-кнопки */
+.animate-vip-flash {
+    animation: vip-flash-anim 1.4s ease-in-out infinite;
+}
+
+@keyframes vip-flash-anim {
+    0%, 100% { 
+        transform: scale(1);
+        box-shadow: 6px 6px 0px #1a1a1a;
+        background-color: #FF2D95;
+    }
+    50% { 
+        transform: scale(1.02);
+        box-shadow: 6px 6px 0px #1a1a1a, 0 0 25px #FF1493;
+        background-color: #FF1493;
+    }
 }
