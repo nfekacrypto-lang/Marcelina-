@@ -1,0 +1,1 @@
+import FloatingCharacters from '../components/lina/FloatingCharacters'; export default function LinaProfile(){return <div><FloatingCharacters/></div>}

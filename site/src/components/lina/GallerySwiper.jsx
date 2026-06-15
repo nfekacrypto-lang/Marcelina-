@@ -1,0 +1,1 @@
+export default function GallerySwiper(){return <div>Gallery</div>}

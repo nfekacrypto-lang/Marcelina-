@@ -1,0 +1,1 @@
+import LinaProfile from './pages/LinaProfile'; export default function App(){return <LinaProfile/>}
