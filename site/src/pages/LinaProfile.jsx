@@ -74,7 +74,7 @@ export default function LinaProfile() {
         {/* Кнопки */}
         <div className="w-full flex flex-col gap-5 mb-14">
           
-          {/* МЕРЕХТЛИВА VIP КНОПКА */}
+          {/* ГОЛОВНА МЕРЕХТЛИВА VIP КНОПКА */}
           <a href="https://t.me/+baJbJy9ycT05NGVi" target="_blank" rel="noreferrer"
              className="w-full text-white py-5 px-6 rounded-2xl neo-brutalism-btn flex items-center justify-center gap-3 group relative overflow-hidden no-underline animate-vip-flash">
             {/* Іконка корони */}
@@ -84,23 +84,6 @@ export default function LinaProfile() {
             <span className="font-fredoka text-2xl tracking-wide">My Exclusive VIP Content</span>
           </a>
 
-          {/* Подвійна сітка кнопок */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full">
-            <a href="https://t.me/+baJbJy9ycT05NGVi" target="_blank" rel="noreferrer"
-               className="bg-[#9F4BFF] text-white py-4 px-6 rounded-2xl neo-brutalism-btn flex items-center justify-center gap-2 font-bold text-lg no-underline">
-              Submissive GFE 🐾
-            </a>
-            <a href="https://t.me/+baJbJy9ycT05NGVi" target="_blank" rel="noreferrer"
-               className="bg-[#FF9E9E] text-[#1C1628] py-4 px-6 rounded-2xl neo-brutalism-btn flex items-center justify-center gap-2 font-bold text-lg no-underline">
-              Cosplay Magic ✨
-            </a>
-          </div>
-
-          {/* Кнопка приватного чату */}
-          <a href="https://t.me/+baJbJy9ycT05NGVi" target="_blank" rel="noreferrer"
-             className="w-full bg-white text-[#1C1628] py-4 px-6 rounded-2xl neo-brutalism-btn flex items-center justify-center gap-2 font-bold text-xl mt-2 no-underline">
-            Private Chat 💬
-          </a>
         </div>
 
         {/* Галерея */}
