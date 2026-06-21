@@ -74,7 +74,7 @@ export default function LinaProfile() {
         {/* Кнопки */}
         <div className="w-full flex flex-col gap-5 mb-14">
           
-          {/* 1 КНОПКА: МЕРЕХТЛИВА VIP КНОПКА (Тепер веде на Fanvue) */}
+          {/* 1 КНОПКА: VIP КНОПКА (Fanvue) */}
           <a href="https://www.fanvue.com/lina_zxi" target="_blank" rel="noreferrer"
              className="w-full text-white py-5 px-6 rounded-2xl neo-brutalism-btn flex items-center justify-center gap-3 group relative overflow-hidden no-underline animate-vip-flash">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7 group-hover:rotate-12 transition-transform">
@@ -83,7 +83,7 @@ export default function LinaProfile() {
             <span className="font-fredoka text-2xl tracking-wide">My Exclusive VIP Content</span>
           </a>
 
-          {/* 2 КНОПКА: Chat with me (Тепер веде на Fanvue) */}
+          {/* 2 КНОПКА: Chat with me (Fanvue) */}
           <a href="https://www.fanvue.com/lina_zxi" target="_blank" rel="noreferrer"
              className="w-full bg-[#FFD1E3] text-[#1C1628] py-5 px-6 rounded-2xl border-4 border-black font-fredoka text-2xl tracking-wide flex items-center justify-center gap-3 shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] transition-all no-underline">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
@@ -92,7 +92,7 @@ export default function LinaProfile() {
             <span>Chat with me</span>
           </a>
 
-          {/* 3 КНОПКА: My telegram (Веде на твій початковий Telegram) */}
+          {/* 3 КНОПКА: My telegram (Telegram) */}
           <a href="https://t.me/+baJbJy9ycT05NGVi" target="_blank" rel="noreferrer"
              className="w-full bg-white text-[#1C1628] py-5 px-6 rounded-2xl border-4 border-black font-fredoka text-2xl tracking-wide flex items-center justify-center gap-3 shadow-[4px_4px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] transition-all no-underline">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7 text-[#0088cc]">
@@ -108,4 +108,30 @@ export default function LinaProfile() {
           <h2 className="font-fredoka text-4xl text-[#1C1628] mb-8 flex items-center gap-3 drop-shadow-[2px_2px_0px_#fff]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             Gallery
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 text-white"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </h2>
+
+          <div className="w-full flex justify-center">
+            <div className="swiper swiper-cards">
+              <div className="swiper-wrapper">
+                <div className="swiper-slide rounded-2xl neo-brutalism bg-white overflow-hidden">
+                  <img src="https://i.ibb.co/chzKGkGR/seedream-9524.jpg" className="w-full h-full object-cover hd-img" alt="Gallery 1" />
+                </div>
+                <div className="swiper-slide rounded-2xl neo-brutalism bg-white overflow-hidden">
+                  <img src="https://i.ibb.co/R5MdRC4/IMG-9199.jpg" className="w-full h-full object-cover hd-img" alt="Gallery 2" />
+                </div>
+                <div className="swiper-slide rounded-2xl neo-brutalism bg-white overflow-hidden">
+                  <img src="https://i.ibb.co/NgX00m8C/seedream-3742.jpg" className="w-full h-full object-cover hd-img" alt="Gallery 3" />
+                </div>
+                <div className="swiper-slide rounded-2xl neo-brutalism bg-white overflow-hidden">
+                  <img src="https://i.ibb.co/SX30RYKQ/IMG-3526.jpg" className="w-full h-full object-cover hd-img" alt="Gallery 4" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+  );
+}
