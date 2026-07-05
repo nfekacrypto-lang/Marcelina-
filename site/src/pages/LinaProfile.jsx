@@ -11,11 +11,11 @@ export default function LinaProfile() {
 
       <main className="w-full max-w-[450px] md:max-w-2xl flex flex-col items-center z-10 mt-4">
         
-        {/* Блок Аватарки — Твоє нове фото */}
+        {/* Блок Аватарки — Оригінал у високій якості */}
         <div className="relative mb-8">
           <div className="w-[260px] h-[340px] sm:w-[290px] sm:h-[380px] md:w-[340px] md:h-[440px] rounded-[36px] overflow-hidden neo-brutalism bg-white">
             <img 
-              src="https://i.ibb.co/5WvBrVPy/photo.jpg" 
+              src="https://i.ibb.co/Kj7F2HJk/image.jpg" 
               alt="Lina_zxi avatar" 
               className="w-full h-full object-cover hd-img"
             />
@@ -39,7 +39,7 @@ export default function LinaProfile() {
           </svg>
         </div>
 
-        {/* Контейнер з єдиною головною VIP-кнопкою Stacked */}
+        {/* Контейнер з однією VIP-кнопкою Stacked */}
         <div className="w-full flex flex-col gap-6 px-2">
           
           <a href="https://www.stacked.com/@Lina_zxi/membership?lang=en" target="_blank" rel="noreferrer"
