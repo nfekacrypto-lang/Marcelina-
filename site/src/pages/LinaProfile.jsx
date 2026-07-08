@@ -1,23 +1,24 @@
 import React from 'react';
 
 export default function LinaProfile() {
-  // Твоє єдине посилання для всіх кнопок
-  const telegramLink = "https://t.me/+baJbJy9ycT05NGVi";
+  // 🔗 НАЛАШТУВАННЯ ПОСИЛАНЬ (Встав сюди свої прямі лінки з i.ibb.co)
+  const BACK_GROUND_URL = "ВСТАВ_СЮДИ_URL_ЗОБРАЖЕННЯ_ДЛЯ_ФОНУ"; 
+  const BUTTON_IMAGE_URL = "ВСТАВ_СЮДИ_URL_ЗОБРАЖЕННЯ_ДЛЯ_КНОПКИ";
+  const TELEGRAM_LINK = "https://t.me/+baJbJy9ycT05NGVi";
 
   return (
     <div className="min-h-screen bg-[#0D0C10] text-white flex flex-col items-center pb-12 select-none antialiased">
       
-      {/* Контейнер адаптований під мобільні екрани */}
+      {/* Мобільний контейнер */}
       <main className="w-full max-w-md flex flex-col items-center">
         
-        {/* 1. ТОП ФОТО (Новий фон з твого посилання https://ibb.co/gbYVnwP6) */}
+        {/* 1. ТОП ФОТО (Фон профілю) */}
         <div className="relative w-full aspect-[4/5] overflow-hidden bg-zinc-950">
           <img 
-            src="ВСТАВ_СЮДИ_ПРЯМЕ_ПОСИЛАННЯ_НА_ФОН_З_IMGBB" 
+            src={BACK_GROUND_URL} 
             alt="Lina_zxi profile background" 
             className="w-full h-full object-cover"
           />
-          {/* Темний градієнт знизу для чіткості тексту */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C10] via-black/10 to-transparent" />
           
           {/* Нікнейм поверх фону */}
@@ -29,28 +30,20 @@ export default function LinaProfile() {
           </div>
         </div>
 
-        {/* Блок кнопок */}
-        <div className="w-full px-4 flex flex-col gap-4 mt-6">
+        {/* Блок із двома кнопками */}
+        <div className="w-full px-4 flex flex-col gap-5 mt-6">
           
-          {/* ========================================================== */}
-          {/* 2. ГОЛОВНА КНОПКА З КАРТИНКОЮ (З твого посилання https://ibb.co/67kkyPxH) */}
-          {/* ========================================================== */}
-          <a href={telegramLink} target="_blank" rel="noreferrer"
+          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ (Ідеально відцентрована) */}
+          <a href={TELEGRAM_LINK} target="_blank" rel="noreferrer"
              className="relative w-full h-48 rounded-3xl overflow-hidden block group active:scale-[0.98] transition-transform border border-zinc-800/50 shadow-xl">
             <img 
-              src="ВСТАВ_СЮДИ_ПРЯМЕ_ПОСИЛАННЯ_НА_КНОПКУ_З_IMGBB" 
-              alt="VIP Preview" 
-              /* 
-                💡 object-[50%_50%] (або object-center) центрує картинку ідеально по середині.
-                Якщо треба опустити фокус (показати більше верху) — став наприклад 50% 40%.
-                Якщо треба підняти фокус (показати більше низу) — став 50% 60%.
-              */
-              className="w-full h-full object-cover object-[50%_50%] group-hover:scale-105 transition-transform duration-500"
+              src={BUTTON_IMAGE_URL} 
+              alt="VIP Chat Preview" 
+              className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
             />
-            {/* Градієнтна підкладка всередині кнопки */}
+            {/* Затемнення, щоб текст горів */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
             
-            {/* Текст на кнопці-картці */}
             <div className="absolute bottom-5 left-5">
               <span className="text-xl font-bold tracking-wide flex items-center gap-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                 💬 Chat with me 💋
@@ -58,25 +51,10 @@ export default function LinaProfile() {
             </div>
           </a>
 
-          <div className="my-1" />
-
-          {/* ========================================================== */}
-          {/* 3. ТЕКСТОВІ КНОПКИ (Усі ведуть в той самий Telegram)        */}
-          {/* ========================================================== */}
-          
-          <a href={telegramLink} target="_blank" rel="noreferrer"
-             className="w-full bg-white text-black py-4 rounded-2xl font-bold text-lg text-center shadow-md active:scale-[0.99] transition-transform block no-underline">
-            👑 VIP Membership
-          </a>
-
-          <a href={telegramLink} target="_blank" rel="noreferrer"
-             className="w-full bg-white text-black py-4 rounded-2xl font-bold text-lg text-center shadow-md active:scale-[0.99] transition-transform block no-underline">
-            🔗 Instagram
-          </a>
-
-          <a href={telegramLink} target="_blank" rel="noreferrer"
-             className="w-full bg-white text-black py-4 rounded-2xl font-bold text-lg text-center shadow-md active:scale-[0.99] transition-transform block no-underline">
-            🔗 TikTok
+          {/* 🔥 КНОПКА 2: ЧИСТИЙ ТЕКСТ ТЕЛЕГРАМ */}
+          <a href={TELEGRAM_LINK} target="_blank" rel="noreferrer"
+             className="w-full bg-white text-black py-4 rounded-2xl font-bold text-xl text-center shadow-md active:scale-[0.99] transition-transform block no-underline tracking-wide">
+            ✈️ My Telegram
           </a>
 
         </div>
