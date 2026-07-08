@@ -1,25 +1,23 @@
 import React from 'react';
 
 export default function LinaProfile() {
-  // 🔗 НАЛАШТУВАННЯ ПОСИЛАНЬ (Встав сюди свої прямі лінки з i.ibb.co)
-  const BACK_GROUND_URL = "ВСТАВ_СЮДИ_URL_ЗОБРАЖЕННЯ_ДЛЯ_ФОНУ"; 
-  const BUTTON_IMAGE_URL = "ВСТАВ_СЮДИ_URL_ЗОБРАЖЕННЯ_ДЛЯ_КНОПКИ";
-  const TELEGRAM_LINK = "https://t.me/+baJbJy9ycT05NGVi";
+  const telegramLink = "https://t.me/+baJbJy9ycT05NGVi";
 
   return (
     <div className="min-h-screen bg-[#0D0C10] text-white flex flex-col items-center pb-12 select-none antialiased">
       
-      {/* Мобільний контейнер */}
+      {/* Контейнер адаптований під мобільні екрани */}
       <main className="w-full max-w-md flex flex-col items-center">
         
-        {/* 1. ТОП ФОТО (Фон профілю) */}
+        {/* 1. ТОП ФОТО (Твій новий фон у високій якості) */}
         <div className="relative w-full aspect-[4/5] overflow-hidden bg-zinc-950">
           <img 
-            src={BACK_GROUND_URL} 
+            src="https://i.ibb.co/dsZgh6L7/photo-2026-07-08-18-32-44.jpg" 
             alt="Lina_zxi profile background" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C10] via-black/10 to-transparent" />
+          {/* Темний градієнт знизу для чіткості тексту */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C10] via-black/20 to-transparent" />
           
           {/* Нікнейм поверх фону */}
           <div className="absolute bottom-6 w-full text-center px-4">
@@ -30,18 +28,18 @@ export default function LinaProfile() {
           </div>
         </div>
 
-        {/* Блок із двома кнопками */}
+        {/* Блок із ДВОМА кнопками */}
         <div className="w-full px-4 flex flex-col gap-5 mt-6">
           
-          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ (Ідеально відцентрована) */}
-          <a href={TELEGRAM_LINK} target="_blank" rel="noreferrer"
+          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ (Ідеально відцентрована по середині) */}
+          <a href={telegramLink} target="_blank" rel="noreferrer"
              className="relative w-full h-48 rounded-3xl overflow-hidden block group active:scale-[0.98] transition-transform border border-zinc-800/50 shadow-xl">
             <img 
-              src={BUTTON_IMAGE_URL} 
+              src="https://i.ibb.co/bMkk6BZs/D23-AB150-4-A94-4-C17-A100-36-DFC4-EB9-F11.png" 
               alt="VIP Chat Preview" 
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
             />
-            {/* Затемнення, щоб текст горів */}
+            {/* Тінь поверх картинки, щоб текст світився */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
             
             <div className="absolute bottom-5 left-5">
@@ -51,8 +49,8 @@ export default function LinaProfile() {
             </div>
           </a>
 
-          {/* 🔥 КНОПКА 2: ЧИСТИЙ ТЕКСТ ТЕЛЕГРАМ */}
-          <a href={TELEGRAM_LINK} target="_blank" rel="noreferrer"
+          {/* 🔥 КНОПКА 2: ТЕКСТОВА КНОПКА ТЕЛЕГРАМ */}
+          <a href={telegramLink} target="_blank" rel="noreferrer"
              className="w-full bg-white text-black py-4 rounded-2xl font-bold text-xl text-center shadow-md active:scale-[0.99] transition-transform block no-underline tracking-wide">
             ✈️ My Telegram
           </a>
