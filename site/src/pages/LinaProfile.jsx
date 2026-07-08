@@ -1,53 +1,82 @@
 import React from 'react';
 
 export default function LinaProfile() {
+  // Твоє єдине посилання для всіх кнопок
+  const telegramLink = "https://t.me/+baJbJy9ycT05NGVi";
+
   return (
-    <div className="relative min-h-screen flex flex-col items-center pt-8 pb-16 px-4 select-none overflow-hidden">
+    <div className="min-h-screen bg-[#0D0C10] text-white flex flex-col items-center pb-12 select-none antialiased">
       
-      {/* Фонові Y2K літаючі елементи */}
-      <div className="absolute top-12 left-6 text-5xl md:text-7xl animate-float-slow opacity-60 z-0 pointer-events-none">🦇</div>
-      <div className="absolute top-28 right-6 md:right-32 text-5xl md:text-7xl animate-float-med opacity-60 z-0 pointer-events-none">🎀</div>
-      <div className="absolute bottom-20 left-8 md:left-32 text-5xl md:text-7xl animate-float-fast opacity-60 z-0 pointer-events-none">💀</div>
-
-      <main className="w-full max-w-[450px] md:max-w-2xl flex flex-col items-center z-10 mt-4">
+      {/* Контейнер адаптований під мобільні екрани */}
+      <main className="w-full max-w-md flex flex-col items-center">
         
-        {/* Блок Аватарки — Оригінал у високій якості */}
-        <div className="relative mb-8">
-          <div className="w-[260px] h-[340px] sm:w-[290px] sm:h-[380px] md:w-[340px] md:h-[440px] rounded-[36px] overflow-hidden neo-brutalism bg-white">
-            <img 
-              src="https://i.ibb.co/Kj7F2HJk/image.jpg" 
-              alt="Lina_zxi avatar" 
-              className="w-full h-full object-cover hd-img"
-            />
-          </div>
-          {/* Іконка Sparkles */}
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#FF1493" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="absolute -top-4 -right-4 w-14 h-14 animate-pulse z-20 drop-shadow-[2px_2px_0px_rgba(0,0,0,1)]">
-            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/>
-          </svg>
-        </div>
-
-        {/* Нікнейм */}
-        <h1 className="font-fredoka text-5xl sm:text-6xl md:text-7xl text-[#1C1628] drop-shadow-[4px_4px_0px_#fff] mb-4 text-center tracking-wide w-full">
-          Lina_zxi
-        </h1>
-
-        {/* Біо */}
-        <div className="bg-white px-6 py-3 rounded-full neo-brutalism flex items-center justify-center gap-2 mb-10 w-auto max-w-full">
-          <span className="font-bold text-base sm:text-lg md:text-xl text-[#1C1628] text-center">Welcome to my little world</span>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF1493" className="w-5 h-5 flex-shrink-0 animate-bounce">
-            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
-          </svg>
-        </div>
-
-        {/* Контейнер з однією VIP-кнопкою Stacked */}
-        <div className="w-full flex flex-col gap-6 px-2">
+        {/* 1. ТОП ФОТО (Новий фон з твого посилання https://ibb.co/gbYVnwP6) */}
+        <div className="relative w-full aspect-[4/5] overflow-hidden bg-zinc-950">
+          <img 
+            src="ВСТАВ_СЮДИ_ПРЯМЕ_ПОСИЛАННЯ_НА_ФОН_З_IMGBB" 
+            alt="Lina_zxi profile background" 
+            className="w-full h-full object-cover"
+          />
+          {/* Темний градієнт знизу для чіткості тексту */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C10] via-black/10 to-transparent" />
           
-          <a href="https://www.stacked.com/@Lina_zxi/membership?lang=en" target="_blank" rel="noreferrer"
-             className="w-full text-white py-5 sm:py-6 px-6 rounded-2xl neo-brutalism-btn flex items-center justify-center gap-4 group relative overflow-hidden no-underline animate-vip-flash">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="w-8 h-8 group-hover:rotate-12 transition-transform">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-            <span className="font-fredoka text-2xl sm:text-3xl tracking-wide font-bold">Chat with me</span>
+          {/* Нікнейм поверх фону */}
+          <div className="absolute bottom-6 w-full text-center px-4">
+            <h1 className="font-fredoka text-4xl font-bold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
+              Lina_zxi
+            </h1>
+            <p className="text-zinc-300 text-sm mt-2 font-medium drop-shadow-sm">Welcome to my little world ✨</p>
+          </div>
+        </div>
+
+        {/* Блок кнопок */}
+        <div className="w-full px-4 flex flex-col gap-4 mt-6">
+          
+          {/* ========================================================== */}
+          {/* 2. ГОЛОВНА КНОПКА З КАРТИНКОЮ (З твого посилання https://ibb.co/67kkyPxH) */}
+          {/* ========================================================== */}
+          <a href={telegramLink} target="_blank" rel="noreferrer"
+             className="relative w-full h-48 rounded-3xl overflow-hidden block group active:scale-[0.98] transition-transform border border-zinc-800/50 shadow-xl">
+            <img 
+              src="ВСТАВ_СЮДИ_ПРЯМЕ_ПОСИЛАННЯ_НА_КНОПКУ_З_IMGBB" 
+              alt="VIP Preview" 
+              /* 
+                💡 object-[50%_50%] (або object-center) центрує картинку ідеально по середині.
+                Якщо треба опустити фокус (показати більше верху) — став наприклад 50% 40%.
+                Якщо треба підняти фокус (показати більше низу) — став 50% 60%.
+              */
+              className="w-full h-full object-cover object-[50%_50%] group-hover:scale-105 transition-transform duration-500"
+            />
+            {/* Градієнтна підкладка всередині кнопки */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+            
+            {/* Текст на кнопці-картці */}
+            <div className="absolute bottom-5 left-5">
+              <span className="text-xl font-bold tracking-wide flex items-center gap-2 drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                💬 Chat with me 💋
+              </span>
+            </div>
+          </a>
+
+          <div className="my-1" />
+
+          {/* ========================================================== */}
+          {/* 3. ТЕКСТОВІ КНОПКИ (Усі ведуть в той самий Telegram)        */}
+          {/* ========================================================== */}
+          
+          <a href={telegramLink} target="_blank" rel="noreferrer"
+             className="w-full bg-white text-black py-4 rounded-2xl font-bold text-lg text-center shadow-md active:scale-[0.99] transition-transform block no-underline">
+            👑 VIP Membership
+          </a>
+
+          <a href={telegramLink} target="_blank" rel="noreferrer"
+             className="w-full bg-white text-black py-4 rounded-2xl font-bold text-lg text-center shadow-md active:scale-[0.99] transition-transform block no-underline">
+            🔗 Instagram
+          </a>
+
+          <a href={telegramLink} target="_blank" rel="noreferrer"
+             className="w-full bg-white text-black py-4 rounded-2xl font-bold text-lg text-center shadow-md active:scale-[0.99] transition-transform block no-underline">
+            🔗 TikTok
           </a>
 
         </div>
