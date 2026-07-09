@@ -12,7 +12,7 @@ export default function LinaProfile() {
         {/* 1. ТОП ФОТО (Твій новий фон у високій якості) */}
         <div className="relative w-full aspect-[4/5] overflow-hidden bg-zinc-950">
           <img 
-            src="https://i.ibb.co/dsZgh6L7/photo-2026-07-08-18-32-44.jpg" 
+            src="https://i.ibb.co/hFTvctcJ/image-4.jpg" 
             alt="Lina_zxi profile background" 
             className="w-full h-full object-cover"
           />
@@ -31,7 +31,7 @@ export default function LinaProfile() {
         {/* Блок із ДВОМА кнопками */}
         <div className="w-full px-4 flex flex-col gap-5 mt-6">
           
-          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ (Ідеально відцентрована по середині) */}
+          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ */}
           <a href={telegramLink} target="_blank" rel="noreferrer"
              className="relative w-full h-48 rounded-3xl overflow-hidden block group active:scale-[0.98] transition-transform border border-zinc-800/50 shadow-xl">
             <img 
