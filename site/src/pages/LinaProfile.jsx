@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function LinaProfile() {
-  const telegramLink = "https://t.me/+baJbJy9ycT05NGVi";
+    const telegramLink = "https://t.me/+WDTF6TufLjRjMWJi";
 
   return (
     <div className="min-h-screen bg-[#0D0C10] text-white flex flex-col items-center pb-12 select-none antialiased">
