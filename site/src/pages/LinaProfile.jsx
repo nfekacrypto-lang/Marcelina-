@@ -2,8 +2,6 @@ import React from 'react';
 
 export default function LinaProfile() {
     const telegramLink = "https://t.me/+WDTF6TufLjRjMWJi";
-    // Нове пряме посилання на твоє фото
-    const newPhotoUrl = "https://i.postimg.cc/q7jBK901/Comfy-UI-temp-csnba-00002-bxatq-1793563256.jpg";
 
   return (
     <div className="min-h-screen bg-[#0D0C10] text-white flex flex-col items-center pb-12 select-none antialiased">
@@ -11,10 +9,10 @@ export default function LinaProfile() {
       {/* Контейнер адаптований під мобільні екрани */}
       <main className="w-full max-w-md flex flex-col items-center">
         
-        {/* 1. ТОП ФОТО (Твій новий фон у високій якості) */}
+        {/* 1. ТОП ФОТО (Твоє нове фото тут) */}
         <div className="relative w-full aspect-[4/5] overflow-hidden bg-zinc-950">
           <img 
-            src={newPhotoUrl} 
+            src="https://i.postimg.cc/q7jBK901/Comfy-UI-temp-csnba-00002-bxatq-1793563256.jpg" 
             alt="Lina_zxi profile background" 
             className="w-full h-full object-cover"
           />
@@ -33,11 +31,11 @@ export default function LinaProfile() {
         {/* Блок із ДВОМА кнопками */}
         <div className="w-full px-4 flex flex-col gap-5 mt-6">
           
-          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ */}
+          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ (тут залишилась стара картинка) */}
           <a href={telegramLink} target="_blank" rel="noreferrer"
              className="relative w-full h-48 rounded-3xl overflow-hidden block group active:scale-[0.98] transition-transform border border-zinc-800/50 shadow-xl">
             <img 
-              src={newPhotoUrl} 
+              src="https://i.ibb.co/bMkk6BZs/D23-AB150-4-A94-4-C17-A100-36-DFC4-EB9-F11.png" 
               alt="VIP Chat Preview" 
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
             />
