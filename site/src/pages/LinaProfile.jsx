@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function LinaProfile() {
-    const telegramLink = "https://t.me/+WDTF6TufLjRjMWJi";
+    const telegramLink = "https://t.me/+uHrfTvmbwiAzYzRi";
 
   return (
     <div className="min-h-screen bg-[#0D0C10] text-white flex flex-col items-center pb-12 select-none antialiased">
@@ -9,7 +9,7 @@ export default function LinaProfile() {
       {/* Контейнер адаптований під мобільні екрани */}
       <main className="w-full max-w-md flex flex-col items-center">
         
-        {/* 1. ТОП ФОТО (Твоє нове фото тут) */}
+        {/* 1. ТОП ФОТО */}
         <div className="relative w-full aspect-[4/5] overflow-hidden bg-zinc-950">
           <img 
             src="https://i.postimg.cc/q7jBK901/Comfy-UI-temp-csnba-00002-bxatq-1793563256.jpg" 
@@ -31,7 +31,7 @@ export default function LinaProfile() {
         {/* Блок із ДВОМА кнопками */}
         <div className="w-full px-4 flex flex-col gap-5 mt-6">
           
-          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ (тут залишилась стара картинка) */}
+          {/* 🔥 КНОПКА 1: З КАРТИНКОЮ */}
           <a href={telegramLink} target="_blank" rel="noreferrer"
              className="relative w-full h-48 rounded-3xl overflow-hidden block group active:scale-[0.98] transition-transform border border-zinc-800/50 shadow-xl">
             <img 
