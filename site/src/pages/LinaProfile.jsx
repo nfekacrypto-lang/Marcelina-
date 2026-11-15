@@ -1,25 +1,50 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 export default function LinaProfile() {
-    const telegramLink = "https://t.me/+rx8WJjeEnbcwY2Yy";
+  const telegramLink = "https://t.me/+rx8WJjeEnbcwY2Yy";
+  const mainPhotoUrl = "https://i.postimg.cc/q7jBK901/Comfy-UI-temp-csnba-00002-bxatq-1793563256.jpg";
+
+  useEffect(() => {
+    document.title = "Lina_zxi ✨";
+
+    const metaTags = [
+      { property: 'og:title', content: 'Lina_zxi ✨ Welcome to my little world' },
+      { property: 'og:description', content: '💬 Chat with me 💋' },
+      { property: 'og:image', content: mainPhotoUrl },
+      { property: 'og:url', content: 'https://linazxi.xyz/' },
+      { property: 'og:type', content: 'website' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Lina_zxi ✨ Welcome to my little world' },
+      { name: 'twitter:description', content: '💬 Chat with me 💋' },
+      { name: 'twitter:image', content: mainPhotoUrl },
+    ];
+
+    metaTags.forEach(({ property, name, content }) => {
+      const selector = property ? `meta[property="${property}"]` : `meta[name="${name}"]`;
+      let element = document.querySelector(selector);
+      if (!element) {
+        element = document.createElement('meta');
+        if (property) element.setAttribute('property', property);
+        if (name) element.setAttribute('name', name);
+        document.head.appendChild(element);
+      }
+      element.setAttribute('content', content);
+    });
+  }, []);
 
   return (
     <div className="min-h-screen bg-[#0D0C10] text-white flex flex-col items-center pb-12 select-none antialiased">
-      
-      {/* Контейнер адаптований під мобільні екрани */}
       <main className="w-full max-w-md flex flex-col items-center">
         
         {/* 1. ТОП ФОТО */}
         <div className="relative w-full aspect-[4/5] overflow-hidden bg-zinc-950">
           <img 
-            src="https://i.postimg.cc/q7jBK901/Comfy-UI-temp-csnba-00002-bxatq-1793563256.jpg" 
+            src={mainPhotoUrl} 
             alt="Lina_zxi profile background" 
             className="w-full h-full object-cover"
           />
-          {/* Темний градієнт знизу для чіткості тексту */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0D0C10] via-black/20 to-transparent" />
           
-          {/* Нікнейм поверх фону */}
           <div className="absolute bottom-6 w-full text-center px-4">
             <h1 className="font-fredoka text-4xl font-bold tracking-wide drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
               Lina_zxi
@@ -39,7 +64,6 @@ export default function LinaProfile() {
               alt="VIP Chat Preview" 
               className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
             />
-            {/* Тінь поверх картинки, щоб текст світився */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
             
             <div className="absolute bottom-5 left-5">
